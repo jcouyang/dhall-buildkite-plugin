@@ -1,10 +1,10 @@
 let bk =
       https://raw.githubusercontent.com/jcouyang/buildkite.dhall/0.2.0/package.dhall
 
-let lint =
+let test =
       bk.Command::{
-      , label = Some "lint"
-      , commands = [ "nix-shell -p shellcheck --run 'shellcheck -x bin/*'" ]
+      , label = Some "test"
+      , commands = [ "dhall <<< '1+2'" ]
       }
 
-in  [ lint ]
+in  [ test ]
