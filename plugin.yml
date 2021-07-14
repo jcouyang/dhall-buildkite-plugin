@@ -1,0 +1,9 @@
+name: Dhall Buildkite
+description: Step up Dhall on Buildkite
+author: https://github.com/jcouyang
+requirements: []
+configuration:
+  properties:
+    os:
+      type: string
+  additionalProperties: false

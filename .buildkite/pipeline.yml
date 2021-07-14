@@ -1,0 +1,6 @@
+steps:
+  - label: ':pipeline:'
+    command: 'dhall-to-yaml <  .buildkite/pipeline.dhall | buildkite-agent pipeline upload'
+    plugins:
+      - jcouyang/dhall:
+          os: 'linux'
