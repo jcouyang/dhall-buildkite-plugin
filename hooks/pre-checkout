@@ -6,7 +6,7 @@ HOOKS_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
 
 cd "${HOOKS_DIR}/.."
 
-OS=${BUILDKITE_PLUGIN_DHALL_OS}
+OS=${BUILDKITE_PLUGIN_DHALL_OS:-"linux"}
 
 if ! which dhall-to-bash &>/dev/null; then
   curl -L https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-bash-1.0.37-x86_64-${OS}.tar.bz2 | tar --extract --bzip2

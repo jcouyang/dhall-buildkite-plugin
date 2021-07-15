@@ -1,4 +1,4 @@
-name: Dhall Buildkite
+name: Dhall
 description: Step up Dhall on Buildkite
 author: https://github.com/jcouyang
 requirements: []
