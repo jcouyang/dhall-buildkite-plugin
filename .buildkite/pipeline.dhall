@@ -4,7 +4,7 @@ let bk =
 let test =
       bk.Command::{
       , label = Some "test"
-      , commands = [ "dhall <<< '1+2'" ]
+      , commands = [ "dhall <<< '1 + 2'" ]
       , plugins = Some [ toMap { jcouyang/dhall = toMap { os = "linux" } } ]
       }
 
