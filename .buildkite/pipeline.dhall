@@ -7,7 +7,7 @@ let test =
       , commands = [ "dhall <<< '1 + 2'" ]
       , plugins = Some
         [ toMap
-            { jcouyang/dhall = toMap { os = bk.PluginConfigValue.L0 "linux" } }
+            { `jcouyang/dhall#master` = toMap { os = bk.PluginConfigValue.L0 "linux" } }
         ]
       }
 
