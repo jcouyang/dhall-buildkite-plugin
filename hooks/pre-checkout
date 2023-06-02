@@ -9,13 +9,13 @@ cd "${HOOKS_DIR}/.."
 OS=${BUILDKITE_PLUGIN_DHALL_OS:-"linux"}
 
 if ! which dhall-to-bash &>/dev/null; then
-  curl -L https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-bash-1.0.37-x86_64-${OS}.tar.bz2 | tar --extract --bzip2
+  curl -L https://github.com/dhall-lang/dhall-haskell/releases/download/1.42.0/dhall-bash-1.0.41-x86_64-${OS}.tar.bz2 | tar --extract --bzip2
 fi
 if ! which dhall-to-json &>/dev/null; then
-  curl -L https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-json-1.7.7-x86_64-${OS}.tar.bz2 | tar --extract --bzip2
+  curl -L https://github.com/dhall-lang/dhall-haskell/releases/download/1.42.0/dhall-json-1.7.12-x86_64-${OS}.tar.bz2 | tar --extract --bzip2
 fi
 if ! which dhall &>/dev/null; then
-  curl -L https://github.com/dhall-lang/dhall-haskell/releases/download/1.39.0/dhall-1.39.0-x86_64-${OS}.tar.bz2 | tar --extract --bzip2
+  curl -L https://github.com/dhall-lang/dhall-haskell/releases/download/1.42.0/dhall-1.42.0-x86_64-${OS}.tar.bz2 | tar --extract --bzip2
 fi
 
 cd -
